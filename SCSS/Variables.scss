@@ -1,0 +1,36 @@
+@mixin m-p($m, $p) {
+
+    @if $m !='none' {
+        margin: $m;
+    }
+
+    @if $p !='none' {
+        padding: $p;
+    }
+}
+
+@mixin ai-jc($a, $j) {
+
+    display: flex;
+
+    @if $a !='none' {
+        align-items: $a;
+    }
+
+    @if $j !='none' {
+        justify-content: $j;
+    }
+}
+
+@mixin fd-fw($f, $w) {
+
+    display: flex;
+
+    @if $f !='none' {
+        flex-direction: $f;
+    }
+
+    @if $w !='none' {
+        flex-wrap: $w;
+    }
+}
